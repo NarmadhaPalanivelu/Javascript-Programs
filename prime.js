@@ -1,15 +1,15 @@
 const prompt=require("prompt-sync")({sigint:true}); 
 let num=prompt("enter the number=>:")
-let value=0;
-for(let i=2; i<=num; i++){
+let count=0
+for(let i=2; i<num; i++){
     if(num%i==0){
-    value++;
-    break;
-    }  
+count++
+    }
 }
-if(value==0){
-    console.log("its a prime number")
+if(count>0){
+    console.log("prime no")
 }
 else{
-    console.log("its not a prime number")
+    console.log("not a prime no")
 }
+   

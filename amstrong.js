@@ -4,7 +4,7 @@ let input = prompt("enter the number")
 let temp=input;
 let sum=0;
 while(temp>0)
-{
+{ 
     let rem=temp%10;
     sum= sum+rem*rem*rem;
     temp = parseInt(temp / 10); // convert float into integer

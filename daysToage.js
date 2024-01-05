@@ -6,7 +6,7 @@ if (!isNaN(days)) {
   const daysInCommonYear = 365;
   const daysInLeapYear = 366;
 
-  const ageInYears = Math.floor(days / daysInCommonYear);
+  const ageInYears = Math.floor(days / daysInCommonYear);  
   const remainingDays = days % daysInCommonYear;
 
   const leapYearAgeInYears = Math.floor(days / daysInLeapYear);

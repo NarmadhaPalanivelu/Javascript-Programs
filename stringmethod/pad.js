@@ -15,4 +15,3 @@ console.log(ans3)
 
 let x4="narmadha"
 let ans4=x4.padEnd(9,"L");
-console.log(ans4)
