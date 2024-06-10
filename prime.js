@@ -1,15 +1,16 @@
-const prompt=require("prompt-sync")({sigint:true}); 
-let num=prompt("enter the number=>:")
-let value=0;
-for(let i=2; i<=num; i++){
-    if(num%i==0){
-    value++;
-    break;
-    }  
+function isPrime(num) {
+    // Check if num is less than 2
+    if (num < 2) {
+        return false;
+    }
+    // Check for divisibility from 2 to num - 1
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
 }
-if(value==0){
-    console.log("its a prime number")
-}
-else{
-    console.log("its not a prime number")
-}
+
+// Test the function
+console.log(isPrime(8)); 

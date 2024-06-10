@@ -17,16 +17,39 @@ const prompt=require("prompt-sync")({sigint:true});
 
 
 //palindrome using string//////////////
-let input=prompt("Enter the string:");
+// let input=prompt("Enter the string:");
 
-const isPalindrome=(str)=>{
-    const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
-    const reversedStr = cleanedStr.split('').reverse().join('');
-    return cleanedStr === reversedStr;
+// const isPalindrome=(str)=>{
+//     const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+//     const reversedStr = cleanedStr.split('').reverse().join('');
+//     return cleanedStr === reversedStr;
 
+// }
+// if (isPalindrome(input)) {
+//         console.log("It is a palindrome.");
+//       } else {
+//         console.log("It is not a palindrome.");
+//       }
+
+
+
+//////////////////////////////||||||refer\\\\\\\\\\\\\\\\\\\--------------------
+
+
+var array =["bob","mom","dad","dog","cat","namratha","pondygirl","princess"]
+function isPalindrome(str) {
+  return str === str.split('').reverse().join('');
 }
-if (isPalindrome(input)) {
-        console.log("It is a palindrome.");
-      } else {
-        console.log("It is not a palindrome.");
-      }
+// function countPlanidromeInArray(array){
+  let palindormCount=0;
+  array.forEach((value)=>{  
+  if(isPalindrome(value)){
+    palindormCount++
+  }
+  }
+  )
+
+
+console.log("count of palindorme = "+palindormCount)
+
+

@@ -15,10 +15,11 @@ const prompt=require("prompt-sync")({sigint:true});
 
 //combination using Numbers
 
-let input=prompt("enter the Numbers=>:")
+// let input=prompt("enter the Numbers=>:")
+let input = [3,4,56,78,654]
 let combination=(num)=>{
     let possible=[]
-    for(let i=0; i<num.length; i++){
+    for(let i=0; i<num.length; i++){    
         for(let j=i+1; j<num.length+1; j++){
             possible.push(num.slice(i,j))
         }

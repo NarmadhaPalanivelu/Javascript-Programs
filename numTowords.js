@@ -12,7 +12,7 @@ function convertHundreds(num) {
 
 function convertTens(num) {
   if (num < 10) return units[num];
-  else if (num < 20) return teens[num - 10];
+  else if (num < 20) return teens[num-10];
   else return tens[Math.floor(num / 10)] + ' ' + units[num % 10];
 }
 
