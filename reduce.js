@@ -4,7 +4,7 @@
 
 // let answer=data.reduce(function(previousval,currentval){
 //     return(previousval + currentval)
-// })
+// },0)
 // console.log(answer)
 
 

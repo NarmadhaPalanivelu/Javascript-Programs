@@ -38,19 +38,64 @@ const prompt=require("prompt-sync")({sigint:true});
 
 ///count the vowels//
 
-let words= " hi im from podmicherry"
+// let words= " hi im from podmicherry"
 
-let convertstring = words.toLowerCase()
+// let convertstring = words.toLowerCase()
 
-let vowels = ['a','e','i','o',"u"]
-let count=0
-for (let char of convertstring){
+// let vowels = ['a','e','i','o',"u"]
+// let count=0
+// for (let char of convertstring){
 
-    if(vowels.includes(char)){
-        count++
+//     if(vowels.includes(char)){
+//         count++
+//     }
+// }
+// console.log("number of vowels=>", count)
+
+//extra//
+let str = "hello";
+let vowelCount = 0;
+const vowels = "aeiouAEIOU";
+
+for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+        vowelCount++;
     }
 }
-console.log("number of vowels=>", count)
+
+console.log("Number of vowels:", vowelCount); 
+
+///extra//
+let str = "hello";
+let nonVowelCount = 0;
+const vowels = "aeiouAEIOU";
+
+for (let i = 0; i < str.length; i++) {
+    if (!vowels.includes(str[i])) {
+        nonVowelCount++;
+    }
+}
+
+console.log("Number of non-vowels:", nonVowelCount);
+
+
+//extra//
+let str = "hello";
+let vowelCount = 0;
+let nonVowelCount = 0;
+const vowels = "aeiouAEIOU";
+
+for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+        vowelCount++;
+    } else {
+        nonVowelCount++;
+    }
+}
+
+console.log("Number of vowels:", vowelCount);
+console.log("Number of non-vowels:", nonVowelCount);
+
 
 
 

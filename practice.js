@@ -101,12 +101,16 @@ const { indexOf } = require("lodash");
 
 //=====================search number//////////////////////
 
-let data =[2,3,4,6,7,8]
-let targetdata =3;
-let index = indexOf(targetdata)
-for(let i =0;i<data.length;i++){
+// let data =[2,3,4,6,7,8]
+// let targetdata =3;
+// let index = indexOf(targetdata)
+// for(let i =0;i<data.length;i++){
     
-    data[i]===targetdata
-    console.log(`${targetdata} is found in the index ${index}`)
+//     data[i]===targetdata
+//     console.log(`${targetdata} is found in the index ${index}`)
 
-}
+// }
+
+////////////
+
+

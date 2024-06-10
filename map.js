@@ -7,8 +7,8 @@
 //using alphabet///
 
 // let datas=['apple','mango','banana','cheerry']
-// // let result= datas.map((datas=>"hi"+datas))
-// let result = datas.map(datas=>"hi"+ datas2)
+// // let result = datas.map(datas=>"hi"+ datas)
+
 // console.log(result)
 
 //using object/////////////
